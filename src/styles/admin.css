@@ -1,0 +1,99 @@
+:host,
+html {
+    line-height: 1.5;
+    -webkit-text-size-adjust: 100%;
+    font-family: Nunito, Trebuchet MS, sans-serif;
+    font-feature-settings: normal;
+    font-variation-settings: normal;
+    -moz-tab-size: 4;
+    -o-tab-size: 4;
+    tab-size: 4;
+    -webkit-tap-highlight-color: transparent;
+}
+.pagination .page-link {
+  color: #495057;
+  transition: all 0.2s ease;
+}
+
+.pagination .page-link:hover {
+  background-color: #f1f3f5;
+}
+
+.pagination .page-item.active .page-link {
+  background-color: #0d6efd;
+  box-shadow: 0 4px 10px rgba(13,110,253,.3);
+}.pagination li {
+    
+    margin: 5px;
+}
+.page-item.active button{color: #fff;}
+table{width: 100%;}
+table th{    background: #268966;
+    color: #fff;}
+body {
+    color: #241c17;
+    font-family: Nunito, Trebuchet MS, sans-serif;
+    font-size: 1rem;
+    font-weight: 300;
+    min-width: 320px;
+    --line-clamp: 2;
+    overflow: hidden;
+}
+
+h2 {
+    margin-top: 0
+}
+
+.hidden {
+    display: none;
+}
+
+fieldset {
+
+    padding: 15px;
+    margin: 0;
+    border: 1px solid #c0c0c0;
+    min-width: 0;
+}
+
+fieldset:first-child legend:first-child {
+    padding-top: 0;
+}
+
+.nav-pills .nav-link {
+    border-radius: var(--bs-nav-pills-border-radius);
+    font-size: 14px;
+}
+
+.form-label {
+    font-size: 14px;
+}
+
+.ck.ck-editor__editable_inline {
+
+    height: 300px;
+}
+
+legend {
+    font-size: 12px;
+    padding-top: 10px;
+    padding-bottom: 0;
+    text-transform: uppercase;
+    border-bottom: 0;
+    width: auto;
+    padding: 0px 10px;
+    margin: 0;
+    float: none;
+}
+
+.form-control {
+    font-size: 0.8rem;
+}
+
+.admin-body header {
+    display: none !important;
+}
+
+.admin-body footer {
+    display: none;
+}
