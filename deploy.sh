@@ -2,7 +2,7 @@
 
 # App info
 APP_NAME="nativediscounts"
-APP_DIR="/home/nativediscounts/htdocs/www.nativediscounts.com/nativediscount"
+APP_DIR="/home/nativediscounts/htdocs/www.nativediscounts.com/"
 
 echo "🚀 Starting deployment for $APP_NAME..."
 
