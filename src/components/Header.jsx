@@ -3,11 +3,13 @@ import Link from "next/link";
 import { useState } from "react";
 import Image from "next/image";
 import Sidebars from "./Sidebars";
+import HeaderSearch from "./HeaderSearch";
+import SearchOverlay from "./SearchOverlay";
 
 export default function Header({ searchParms }) {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const country = searchParms?.countryCode || "us";
-
+  const [showSearch, setShowSearch] = useState(false);
   return (
     <header className="bg-light" role="banner">
       {/* Top Announcement Bar */}
@@ -52,7 +54,36 @@ export default function Header({ searchParms }) {
           </Link>
 
           {/* Search bar */}
-          <form
+
+
+<div
+  className="search-trigger"
+  onClick={() => setShowSearch(true)}
+>
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    width="20"
+    height="20"
+    viewBox="0 0 24 24"
+    fill="none"
+    stroke="currentColor"
+    strokeWidth="2"
+    strokeLinecap="round"
+    strokeLinejoin="round"
+  >
+    <circle cx="11" cy="11" r="8"></circle>
+    <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+  </svg>
+
+  <input
+    readOnly
+    placeholder="Search deals, stores or coupons"
+  />
+
+  
+</div>
+<SearchOverlay show={showSearch} onClose={() => setShowSearch(false)} />
+          {/* <form
             role="search"
             aria-label="Site search"
             className=" d-md-flex flex-grow-1 mx-4 bg-light dheader-search"
@@ -82,7 +113,7 @@ export default function Header({ searchParms }) {
                 aria-label="Search input"
               />
             </div>
-          </form>
+          </form> */}
 
           {/* Mobile Menu Toggle */}
           <button

@@ -25,10 +25,10 @@ export async function generateMetadata({ params }) {
   
      title:
      
-      "Native Discounts® | Best US Coupon Codes, Promo Codes & Online Deals [YEAR]",
+      "NativeDiscounts® | Best US Coupon Codes, Promo Codes & Online Deals 2026",
     description:
      
-      "Discover verified US coupon codes, promo codes, and online deals from top brands at Native Discounts. Save on fashion, travel, beauty, electronics, food, software, and more with updated offers and exclusive discounts.",
+      "Discover verified US coupon codes, promo codes, and online deals from top brands at NativeDiscounts. Save on fashion, travel, beauty, electronics, food, software, and more with updated offers and exclusive discounts.",
     keywords: "",
     alternates: {
       canonical: baseUrl,
@@ -80,7 +80,7 @@ export default async function CountryPage({ params }) {
       {
         "@type": "Organization",
         "@id": `${baseUrl}#organization`,
-        name: "Native Discounts",
+        name: "NativeDiscounts",
         url: baseUrl,
         logo: {
           "@type": "ImageObject",

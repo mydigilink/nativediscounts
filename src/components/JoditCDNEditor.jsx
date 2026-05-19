@@ -70,21 +70,34 @@ const init = () => {
     ],
 
     // ✅ Font options
-    controls: {
-      font: {
-        list: {
-          "Arial": "Arial, sans-serif",
-          "Verdana": "Verdana, sans-serif",
-          "Tahoma": "Tahoma, sans-serif",
-          "Times New Roman": "Times New Roman, serif",
-          "Georgia": "Georgia, serif",
-          "Courier New": "Courier New, monospace"
-        }
-      },
-      fontsize: {
-        list: [8, 10, 12, 14, 16, 18, 24, 32, 48]
-      }
-    },
+ controls: {
+  paragraph: {
+    list: window.Jodit.atom({
+      p: "Normal",
+      h1: "Heading 1",
+      h2: "Heading 2",
+      h3: "Heading 3",
+      blockquote: "Quote",
+      pre: "Code"
+    })
+  },
+
+  font: {
+    list: {
+      Nunito: "Nunito,Trebuchet MS,sans-serif",
+      Arial: "Arial, sans-serif",
+      Verdana: "Verdana, sans-serif",
+      Tahoma: "Tahoma, sans-serif",
+      "Times New Roman": "Times New Roman, serif",
+      Georgia: "Georgia, serif",
+      "Courier New": "Courier New, monospace"
+    }
+  },
+
+  fontsize: {
+    list: [8, 10, 12, 14, 16, 18, 24, 32, 48]
+  }
+},
 
     // ✅ Upload config
     uploader: {
